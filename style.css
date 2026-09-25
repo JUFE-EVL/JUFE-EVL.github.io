@@ -55,6 +55,8 @@ a:hover { text-decoration: underline; }
 .pub-list li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
 .pub-title { font-size: 16px; }
 .pub-meta { font-size: 13px; color: var(--ink3); margin-top: 2px; }
+.year { font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent2); margin: 26px 0 4px; }
+.sec-head + .year, .year:first-of-type { margin-top: 8px; }
 
 footer { border-top: 1px solid var(--rule); padding: 26px 0; color: var(--ink3); font-size: 13px; }
 
