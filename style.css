@@ -1,0 +1,65 @@
+/* JUFE-EVL lab page — minimal clean style, aligned with the PoseImageNet palette */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #14181d; --ink2: #4a5361; --ink3: #8a93a1;
+  --rule: #e4e7ec; --accent: #1b4f8f; --accent2: #3d7dc4;
+  --soft: #f7f9fc; --soft2: #eaf1f9;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--ink); background: #ffffff; line-height: 1.65;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.topbar { border-bottom: 1px solid var(--rule); background: #fff; }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.brand { font-weight: 700; letter-spacing: .04em; color: var(--ink); font-size: 17px; }
+.topbar nav { display: flex; gap: 22px; }
+.topbar nav a { color: var(--ink2); font-size: 14px; }
+
+.hero { padding: 84px 0 64px; background: linear-gradient(180deg, #fff 0%, var(--soft) 100%); border-bottom: 1px solid var(--rule); }
+.eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
+.hero h1 { font-size: 44px; line-height: 1.15; margin: 10px 0 6px; font-family: Georgia, serif; }
+.hero .subtitle { font-size: 19px; color: var(--ink2); margin-bottom: 18px; }
+.hero .lead { max-width: 680px; color: var(--ink2); }
+.cta-row { margin-top: 26px; display: flex; gap: 12px; }
+
+.btn {
+  display: inline-block; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  background: var(--accent); color: #fff; border: 1px solid var(--accent);
+}
+.btn:hover { background: var(--accent2); border-color: var(--accent2); text-decoration: none; }
+.btn-ghost { background: transparent; color: var(--accent); }
+.btn-ghost:hover { background: var(--soft2); }
+
+.sec { padding: 64px 0; }
+.sec.alt { background: var(--soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.sec-head { margin-bottom: 20px; }
+.sec-head h2 { font-size: 27px; font-family: Georgia, serif; margin-top: 4px; }
+.dek { color: var(--ink2); max-width: 680px; }
+.fig-note { color: var(--ink3); font-size: 13px; margin-top: 14px; }
+.todo { background: var(--soft2); border: 1px dashed var(--accent2); border-radius: 4px; padding: 0 6px; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card { background: #fff; border: 1px solid var(--rule); border-radius: 12px; padding: 20px 22px; }
+.sec.alt .card { background: #fff; }
+.card h3 { font-size: 16px; margin-bottom: 8px; color: #14375f; }
+.card p { font-size: 14px; color: var(--ink2); }
+
+.pub-list { list-style: none; }
+.pub-list li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.pub-title { font-size: 16px; }
+.pub-meta { font-size: 13px; color: var(--ink3); margin-top: 2px; }
+
+footer { border-top: 1px solid var(--rule); padding: 26px 0; color: var(--ink3); font-size: 13px; }
+
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 34px; }
+  .topbar nav { display: none; }
+}
